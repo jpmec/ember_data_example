@@ -1,0 +1,43 @@
+{{#if controller.isEditing}}
+  {{render "todoEdit"}}
+{{else}}
+<dl class="dl-horizontal">
+  {{#if who}}
+    <dt>Who:</dt>
+    <dd>{{who}}<dd>
+  {{/if}}
+  {{#if what}}
+    <dt>What:</dt>
+    <dd>{{what}}<dd>
+  {{/if}}
+  {{#if where}}
+    <dt>Where:</dt>
+    <dd>{{where}}<dd>
+  {{/if}}
+  {{#if when}}
+    <dt>When:</dt>
+    <dd>{{when}}<dd>
+  {{/if}}
+  {{#if why}}
+    <dt>Why:</dt>
+    <dd>{{why}}<dd>
+  {{/if}}
+  {{#if how}}
+    <dt>How:</dt>
+    <dd>{{how}}<dd>
+  {{/if}}
+  {{#if notes}}
+    <dt>Notes:</dt>
+    <dd>{{notes}}</dd>
+  {{/if}}
+  {{#if status}}
+    <dt>Status:</dt>
+    <dd>{{status}}<dd>
+  {{/if}}
+</dl>
+
+<div class="well well-small">
+  <a class="btn btn" {{action startEditing}}>Edit</a>
+  <a class="btn btn-danger" {{action destroyRecord}}>Remove</a>
+</div>
+{{/if}}

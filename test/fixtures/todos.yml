@@ -1,0 +1,22 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  who: "who1"
+  what: "what1"
+  where: "where1"
+  when: "when1"
+  why: "why1"
+  how: "how1"
+  notes: "notes1"
+  status: "done"
+
+two:
+  who: "who2"
+  what: "what2"
+  where: "where2"
+  when: "when2"
+  why: "why2"
+  how: "how2"
+  notes: "notes2"
+  status: "unfinished"

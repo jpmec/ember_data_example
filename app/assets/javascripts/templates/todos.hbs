@@ -1,9 +1,9 @@
 <div class="span3">
   <div class="well sidebar-nav">
     <ul class="nav nav-list">
-      <li class="nav-header">All Contacts</li>
-      {{#each contact in controller}}
-        {{view App.ContactInListView contentBinding="contact"}}
+      <li class="nav-header">All Todos</li>
+      {{#each todo in controller}}
+        {{view App.TodoInListView contentBinding="todo"}}
       {{/each}}
     </ul>
   </div>
